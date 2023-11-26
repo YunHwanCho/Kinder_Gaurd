@@ -46,6 +46,7 @@ export default function LoginScreen({ navigation }) {
           backgroundColor ="white"
           borderTopEndRadius = "30"
           theme={ButtonTheme}
+          left = {TextInput.Icon. icon = "user"}
           
           
 
@@ -63,6 +64,7 @@ export default function LoginScreen({ navigation }) {
           borderBottomEndRadius = "30"
           underlineColor = "transparent"
           theme={ButtonTheme}
+          borderColor = "gray"
           
         />
       </View>
@@ -74,7 +76,7 @@ export default function LoginScreen({ navigation }) {
           onPress={handleLogin}
           buttonColor="white"
           buttonBorderColor="pink"
-          textColor="#FF3399"
+          textColor="#E74364"
         >
           로그인
         </Button>
@@ -83,7 +85,7 @@ export default function LoginScreen({ navigation }) {
           icon="login"
           mode="contained"
           onPress={handleNew}
-          buttonColor= "#FF3399"
+          buttonColor= "#E74364"
         >
           새로운 계정
         </Button>
@@ -97,10 +99,12 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    marginBottom : 100
+    marginBottom : 100,
+    
   },
   Login: {
     width : 300,
+    borderColor : "gray"
     
   },
   title: {
@@ -119,6 +123,6 @@ const styles = StyleSheet.create({
   sub: {
     fontSize: 15,
     marginLeft : 15,
-    color: "#FF3399",
+    color: "#E74364",
   },
 });

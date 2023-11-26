@@ -24,7 +24,7 @@ export default function App() {
         <Stack.Screen name="First" component={FirstScreen} options={{title : ""}} />
         <Stack.Screen name="Login" component={LoginScreen}  options={{title : "", headerShown: false}} />
         <Stack.Screen name="Main" component={MainScreen} />
-        <Stack.Screen name="New" component={NewScreen} />
+        <Stack.Screen name="New" component={NewScreen}   options={{title : "", headerTintColor : "deeppink"}}/>
       </Stack.Navigator>
     </NavigationContainer>
    
